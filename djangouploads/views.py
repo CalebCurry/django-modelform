@@ -20,8 +20,6 @@ def movie(request, movie_id):
         if movie is not None:
             cache.set(movie_id, movie)
             return render(request, 'movies/movie.html', {'movie': movie})
-        #else:
-        #    raise Http404('Movie does not exist')
 
 def upload(request):
     if request.POST:
