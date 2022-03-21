@@ -1,4 +1,9 @@
 asgiref==3.5.0
+Deprecated==1.2.13
 Django==4.0.3
+packaging==21.3
 Pillow==9.0.1
+pyparsing==3.0.7
+redis==4.1.4
 sqlparse==0.4.2
+wrapt==1.14.0
