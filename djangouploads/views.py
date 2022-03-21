@@ -2,7 +2,9 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import redirect, render, get_object_or_404
 from djangouploads.forms import UploadForm
 from djangouploads.models import Movie
-from django.core.cache import cache
+from django.core.cache import caches
+
+cache = caches['redis']
 
 
 def home(request):

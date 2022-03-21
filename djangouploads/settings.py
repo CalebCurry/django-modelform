@@ -84,13 +84,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
         'LOCATION': 'redis://default:uIGJJuzNnLKvyebVqSN0fmN9lglR4gub@redis-18509.c9.us-east-1-4.ec2.cloud.redislabs.com:18509',
+    },
+    'redis': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://default:uIGJJuzNnLKvyebVqSN0fmN9lglR4gub@redis-18509.c9.us-east-1-4.ec2.cloud.redislabs.com:18509',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
